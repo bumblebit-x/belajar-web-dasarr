@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #212121;
+  color: #ffcc00; /* Warna kuning Bumblebee */
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+  color: white;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Membuat konten di tengah layar secara vertikal */
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* Memaksa semua kartu memiliki tinggi yang sama */
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  text-align: left;
+  margin: 10px 0 20px 0;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: auto; /* Mendorong tombol ke posisi paling bawah agar sejajar */
+  padding: 14px;
+  border: none;
+  background: #ffcc00;
+  color: #212121;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #212121;
+  color: #ffcc00;
+}
+
+footer {
+  background: #212121;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
